@@ -1,4 +1,35 @@
+$darkerblue-color: rgb(101, 161, 196);
+$text-color: rgb(79, 131, 161);
+body {
+  background: rgb(236,102,173);
+  background: linear-gradient(284deg, rgba(236,102,173,1) 0%, rgba(27,214,226,1) 100%) fixed;
+  background-repeat: no-repeat;
+}
 
+
+
+.links {
+  font-weight: bold;
+  a {
+    color: rgb(58, 97, 121);
+    &:hover {
+      color:rgb(97, 168, 210);
+    }
+  }
+}
+
+.btn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: rgb(255, 255, 255);
+  color: $darkerblue-color;
+  border-radius: 5px;
+  border: none;
+  &:hover {
+      background-color: $darkerblue-color;
+      color:white;
+  }
+}
 
 .errors {
   color: rgb(221, 0, 0);

@@ -9,9 +9,9 @@
 Product.destroy_all
 Review.destroy_all
 
-20.times do |index|
-  product = Product.create!(name: Faker::Music.unique.instrument, cost: Faker::Commerce.price, country_of_origin: Faker::Nation.nationality)
+40.times do |index|
+  product = Product.create!(name: Faker::Music.instrument, cost: Faker::Commerce.price, country_of_origin: Faker::Nation.nationality)
   5.times do |index|
-    review = Review.create!(author: Faker::Name.unique.first_name, content_body: Faker::Quotes::Shakespeare.unique.as_you_like_it_quote, rating: Faker::Number.between(from: 1, to: 5))
+    review = Review.create!(author: Faker::Name.unique.first_name, content_body: Faker::Quotes::Shakespeare.as_you_like_it_quote, rating: Faker::Number.between(from: 1, to: 5), product_id: product.id)
   end
 end

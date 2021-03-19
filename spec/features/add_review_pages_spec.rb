@@ -7,7 +7,7 @@ describe "the add a review process" do
     visit product_path(product)
     click_link 'Add a review'
     fill_in 'Author', :with => 'Andy'
-    fill_in 'Content body', :with => 'Works like a charm! Will definitely buy again!'
+    fill_in 'Content body', :with => "If you are looking for classic 80's synth tones, look no further! Works like a charm! Will definitely buy again!"
     fill_in 'Rating', :with => '5'
     click_on 'Create Review'
     expect(page).to have_content 'Review added!'
