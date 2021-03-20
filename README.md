@@ -76,9 +76,14 @@ $ rake db:migrate
 $ rake db:test:prepare
 ```
 
+9. Seed the database with supplementary data:
+```
+$ rake db:seed
+```
+
 The database should now be correctly set up. And you may start a local server to interact with the project.
 
-9. To start a local server, open your default browser and type "localhost:3000" into the search bar and press enter. Here, you will see the live server.
+10. To start a local server, open your default browser and type "localhost:3000" into the search bar and press enter. Here, you will see the live server.
 
 ## Running Tests
 * This application was created using test-driven development (TDD).

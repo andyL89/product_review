@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "the add a review process" do
   it "adds a review" do
-    product = Product.new({name: 'Juno-106'})
+    product = Product.new({name: 'Juno 106', cost: '1,200', country_of_origin: 'Japan'})
     product.save
     visit product_path(product)
     click_link 'Add a review'
@@ -15,7 +15,7 @@ describe "the add a review process" do
   end
 
   it "gives an error when no author is entered" do
-    product = Product.new({name: 'Juno-106'})
+    product = Product.new({name: 'Juno 106', cost: '1,200', country_of_origin: 'Japan'})
     product.save
     visit new_product_review_path(product.id)
     click_on 'Create Review'

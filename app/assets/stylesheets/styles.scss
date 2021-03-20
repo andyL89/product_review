@@ -1,20 +1,37 @@
-$darkerblue-color: rgb(39, 71, 89);
-$text-color: rgb(53, 90, 111);
+$darker-color: rgb(9, 130, 47);
+$text-color: rgb(90, 189, 94);
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 body {
-  background: rgb(236,102,173);
-  background: linear-gradient(284deg, rgba(236,102,173,1) 0%, rgba(27,214,226,1) 100%) fixed;
+  background: rgb(162,0,86);
+  background: linear-gradient(284deg, rgba(162,0,86,1) 0%, rgba(0,78,83,1) 100%) fixed;
   background-repeat: no-repeat;
 }
 
 .container {
   font-family: 'Roboto Mono', monospace;
+  color: #ffffff;
+  h1 {
+    margin-top: 5vw;
+    color: rgb(0, 255, 106);
+    text-shadow: 0 0 3px #96ee96;
+  }
+  h3 {
+    margin-bottom: 3vw;
+  }
 }
 
 p {
-  font-size: medium;
-  font-weight: bold;
-  text-shadow: 0 0 3px #ffffff;
+  font-size: large;
+}
+
+.list {
+  p {
+    font-size: medium;
+    text-shadow: 0 0 3px #ffffff37;
+    &:hover {
+      color:rgb(193, 217, 230);
+    }
+  }
 }
 
 .header {
@@ -33,31 +50,32 @@ p {
 }
 
 .links {
+  margin-top: 3vw;
   font-weight: bold;
   a {
-    color: rgb(5, 106, 0);
+    color: rgb(6, 125, 0);
     &:hover {
-      color:rgb(69, 119, 148);
+      color:rgb(199, 216, 225);
     }
   }
 }
 
 .btn {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
   background-color: rgb(255, 255, 255);
-  color: $darkerblue-color;
+  color: $darker-color;
   border-radius: 5px;
   border: none;
   &:hover {
-      background-color: $darkerblue-color;
+      background-color: $darker-color;
       color:white;
   }
 }
 
 .errors {
-  color: rgb(221, 0, 0);
+  color: rgb(255, 2, 2);
   h3 {
-    color: black;
+    color: rgb(255, 255, 255);
   }
 }
