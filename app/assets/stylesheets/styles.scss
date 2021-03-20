@@ -13,23 +13,57 @@ body {
   h1 {
     margin-top: 5vw;
     color: rgb(0, 255, 106);
-    text-shadow: 0 0 3px #96ee96;
+    text-shadow: 0 0 2px #96ee96;
   }
   h3 {
     margin-bottom: 3vw;
   }
 }
 
+
+
 p {
   font-size: large;
 }
 
 .list {
-  p {
-    font-size: medium;
-    text-shadow: 0 0 3px #ffffff37;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: fit-content;
+  border-style: none;
+  border-radius: 2px;
+  height: 400px;
+  width: 270px;
+  overflow: scroll;
+  list-style: none;
+  padding: 20px;
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+  p a {
+    color: rgb(208, 255, 226);
+    text-shadow: 0 0 2px #ffffffad;
     &:hover {
-      color:rgb(193, 217, 230);
+      color:rgb(255, 255, 255);
+    }
+  }
+}
+
+.review_list {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: fit-content;
+  border-style: none;
+  border-radius: 2px;
+  height: 300px;
+  width: 300px;
+  overflow: scroll;
+  list-style: none;
+  padding: 20px;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+  p a {
+    color: rgb(208, 255, 226);
+    text-shadow: 0 0 2px #ffffff76;
+    &:hover {
+      color:rgb(255, 255, 255);
     }
   }
 }
@@ -38,13 +72,13 @@ p {
   margin-top: 5vw;
   text-align: center;
   color: rgb(0, 255, 106);
-  text-shadow: 0 0 3px #96ee96;
+  text-shadow: 0 0 2px #96ee96;
   h3 {
     margin-bottom: 10vw;
   }
   h4 {
     color: rgb(208, 255, 226);
-    text-shadow: 0 0 3px #ffffff;
+    text-shadow: 0 0 2px #ffffff;
     margin-bottom: 5vw;
   }
 }
@@ -53,7 +87,8 @@ p {
   margin-top: 3vw;
   font-weight: bold;
   a {
-    color: rgb(6, 125, 0);
+    color: rgb(8, 155, 0);
+    text-shadow: 0 0 2px #96ee962e;
     &:hover {
       color:rgb(199, 216, 225);
     }

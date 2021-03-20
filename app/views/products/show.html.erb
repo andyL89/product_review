@@ -3,13 +3,14 @@
 
 <% if @product.reviews.any? %>
   <h4>Product reviews:</h4>
-
+<div class="review_list">
   <% @product.reviews.each do |review| %>
-      <p><%= link_to review.author, product_review_path(@product, review) %> <%= review.rating %> star review</p>
+      <p><%= link_to review.author, product_review_path(@product, review), class: 'links'%> <%= review.rating %> star review</p>
   <% end %>
 <% else %>
   <p>No reviews are listed for this product.</p>
 <% end %>
+</div>
 
 <div class="links">
 <p><%= link_to "Add a review", new_product_review_path(@product) %></p>
