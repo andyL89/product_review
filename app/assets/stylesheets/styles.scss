@@ -1,5 +1,3 @@
-$darker-color: rgb(9, 130, 47);
-$text-color: rgb(90, 189, 94);
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 body {
   background: rgb(162,0,86);
@@ -27,6 +25,7 @@ p {
 }
 
 .list {
+  background-color: rgba(0, 0, 0, 0.249);
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: fit-content;
   border-style: none;
@@ -48,6 +47,7 @@ p {
 }
 
 .review_list {
+  background-color: rgba(0, 0, 0, 0.249);
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: fit-content;
   border-style: none;
@@ -79,7 +79,7 @@ p {
   h4 {
     color: rgb(208, 255, 226);
     text-shadow: 0 0 2px #ffffff;
-    margin-bottom: 5vw;
+    margin-bottom: 8vw;
   }
 }
 
@@ -95,17 +95,33 @@ p {
   }
 }
 
+.blue-links {
+  margin-top: 3vw;
+  font-weight: bold;
+  a {
+    color: rgb(0, 166, 255);
+    text-shadow: 0 0 2px #affaffa7;
+    &:hover {
+      color:rgb(199, 216, 225);
+    }
+  }
+}
+
 .btn {
-  margin-top: 2vw;
-  margin-bottom: 2vw;
+  margin-top: 4vw;
+  margin-bottom: 3vw;
   background-color: rgb(255, 255, 255);
-  color: $darker-color;
+  color: rgb(0, 166, 255);
   border-radius: 5px;
   border: none;
   &:hover {
-      background-color: $darker-color;
+      background-color: rgb(0, 166, 255);
       color:white;
   }
+}
+
+label {
+  margin-top: 1vw;
 }
 
 .errors {

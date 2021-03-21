@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "the add a product process" do
   it "adds a new product" do
     visit products_path
-    click_link 'Add new product'
+    click_link 'Add a new product'
     fill_in 'Name', :with => 'Juno 106'
     fill_in 'Cost', :with => '1,100'
     fill_in 'Country of origin', :with => 'Japan'
