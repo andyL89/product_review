@@ -1,14 +1,6 @@
 <h1>Edit review:</h1>
 
-<%= form_for [@product, @review] do |f| %>
-  <%= f.label :author %>
-  <%= f.text_field :author, class: "form-control" %>
-  <%= f.label :content_body %>
-  <%= f.text_area :content_body, class: "form-control", :rows=>10, :cols=>50 %>
-  <%= f.label :rating %>
-  <%= f.number_field :rating, min: 0, max: 5, class: "form-control" %>
-  <%= f.submit class: "btn" %>
-<% end %>
+<%= render "layouts/review_form" %>
 
 <div class="blue-links">
   <p><%= link_to "Return to review", product_review_path(@product, @review) %></p>
