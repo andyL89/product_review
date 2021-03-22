@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 body {
   background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 70%, rgba(251,255,65,1) 70%, rgba(255,109,0,1) 100%) fixed;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 70%, rgba(251,255,65,1) 70%, rgb(95, 201, 129) 100%) fixed;
   background-repeat: no-repeat;
 }
 
@@ -32,7 +32,7 @@ body {
     margin-bottom: 190px;
   }
   h4 {
-    color: rgb(255, 255, 228);
+    color: rgb(254, 254, 242);
     text-shadow: 0 0 2px #ffffff;
     margin-bottom: 110px;
   }
@@ -81,7 +81,8 @@ p {
     color: rgb(255, 255, 230);
     text-shadow: 0 0 2px #ffffff76;
     &:hover {
-      color:rgb(89, 43, 255);
+      color: rgb(47, 0, 218);
+      text-shadow: 0 0 1px #a596ee;
     }
   }
   h4 {
