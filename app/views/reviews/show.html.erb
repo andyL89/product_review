@@ -1,6 +1,14 @@
 <h1><%= @product.name %></h1>
-<h3>Reviewed by: <%= @review.author %></h3>
-<h4><%= @review.content_body %></h4>
+<div class="content-body">
+  <% @review.rating.to_i.times do %>
+    <span class="glyphicon glyphicon-star"></span>
+  <% end %>
+  <% @review.blank_stars.times do %>
+    <span class="glyphicon glyphicon-star-empty"></span>
+  <% end %>
+  <p><%= @review.content_body %></p>
+  <h4>Reviewed by <%= @review.author %></h4>
+</div>
 
 <div class="blue-links">
   <p><%= link_to "Edit review", edit_product_review_path(@product, @review) %></p>

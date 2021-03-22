@@ -7,6 +7,10 @@ class Review < ApplicationRecord
   validates :rating, presence: true
   before_save(:titleize_author)
 
+  def blank_stars
+    5 - rating.to_i
+  end
+
   private
     def titleize_author
       self.author = self.author.titleize
