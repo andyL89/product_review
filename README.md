@@ -96,10 +96,13 @@ The database should now be correctly set up. And you may start a local server to
 $ psql
 ```
 ```
-$ \c product_review_development
+$ \c product_review_development;
 ```
 ```
-$ UPDATE users SET admin = true WHERE email = '[user email]'
+$ UPDATE users SET admin = true WHERE email = '[user email]';
+```
+```
+$ exit;
 ```
 
 ## Running Tests
