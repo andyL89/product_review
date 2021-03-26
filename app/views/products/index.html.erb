@@ -1,4 +1,3 @@
-
 <h1>Instruments</h1>
 <div class="list">
   <% if @products.any? %>
@@ -14,6 +13,4 @@
   <% if current_user && current_user.admin %>
     <p><%= link_to "Add a new product", new_product_path %></p>
   <% end %>
-
-  <p><%= link_to "Return home", root_path %></p>
 </div>

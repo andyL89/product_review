@@ -25,11 +25,14 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="/products">Instruments</a></li>
-            <li><a href="/tags">Tags</a></li>
+            <li><a href="/about">About Us</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <% if user_signed_in? %>
               <% if current_user && current_user.admin %>
+                <% if current_user.avatar.attached? %>
+                  <%= image_tag current_user.avatar, :class => 'avatar'%>
+                <% end %>
                 <li><%= link_to 'Admin Dashboard', rails_admin_path %></li>
                 <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
               <% elsif %>
@@ -45,9 +48,11 @@
       </div>
     </nav>
     <div class="container">
-      <%= flash[:alert] %>
       <%= yield %>
-      <%= flash[:notice] %>
+      <div class="flash">
+        <%= flash[:alert] %>
+        <%= flash[:notice] %>
+      </div>
     </div>
   </body>
 </html>
