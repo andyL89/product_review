@@ -29,7 +29,7 @@ body {
   h1 {
     font-weight: bolder;
     position: relative;
-    margin-top: 75px;
+    margin-top: 120px;
     color: rgb(40, 0, 186);
     text-shadow: 0 0 1px #a596ee;
   }
@@ -218,6 +218,13 @@ label {
 }
 
 .about {
-  margin-top: 100px;
+  margin-top: 150px;
   text-align: center;
+  h1 {
+    margin-bottom: 150px;
+  }
+}
+
+.paragraph {
+  margin-top: 150px;
 }
