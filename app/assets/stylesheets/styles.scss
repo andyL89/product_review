@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 body {
   background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 70%, rgba(251,255,65,1) 70%, rgb(95, 201, 129) 100%) fixed;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 60%, rgba(251,255,65,1) 60%, rgb(95, 201, 129) 100%) fixed;
   background-repeat: no-repeat;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 .header {
-  margin-top: 20px;
+  margin-top: 75px;
   text-align: center;
   text-shadow: 0 0 2px #a596ee;
   h5 {
@@ -42,6 +42,10 @@ p {
   font-size: large;
 }
 
+.products {
+  margin-top: 75px;
+}
+
 .list {
   background-color: rgba(0, 0, 0, 0.249);
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -53,7 +57,7 @@ p {
   overflow: scroll;
   list-style: none;
   padding: 20px;
-  margin-top: 3vw;
+  margin-top: 2vw;
   margin-bottom: 2vw;
   p a {
     color: rgb(255, 255, 230);
