@@ -10,6 +10,9 @@
 </div>
 
 <div class="blue-links">
-  <p><%= link_to "Add a new product", new_product_path %></p>
+  <% if current_user && current_user.admin %>
+    <p><%= link_to "Add a new product", new_product_path %></p>
+  <% end %>
+
   <p><%= link_to "Return home", root_path %></p>
 </div>
