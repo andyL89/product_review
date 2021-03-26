@@ -11,7 +11,7 @@ body {
   h1 {
     font-weight: bolder;
     position: relative;
-    margin-top: 30px;
+    margin-top: 75px;
     color: rgb(47, 0, 218);
     text-shadow: 0 0 1px #a596ee;
   }
@@ -40,10 +40,6 @@ body {
 
 p {
   font-size: large;
-}
-
-.products {
-  margin-top: 75px;
 }
 
 .list {
@@ -79,7 +75,7 @@ p {
   overflow: scroll;
   list-style: none;
   padding: 20px;
-  margin-top: 1vw;
+  margin-top: 2vw;
   margin-bottom: 2vw;
   p a {
     color: rgb(255, 255, 230);
@@ -103,7 +99,7 @@ p {
   height: fit-content;
   width: fit-content;
   padding: 20px;
-  margin-top: 10px;
+  margin-top: 2vw;
   margin-bottom: 70px;
   h4 {
     margin-top: 30px;

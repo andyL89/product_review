@@ -19,8 +19,12 @@
 </div>
 
 <div class="blue-links">
-<p><%= link_to "Add a review", new_product_review_path(@product) %></p>
-  <p><%= link_to "Edit product", edit_product_path(@product) %></p>
-  <p><%= link_to "Delete product", product_path(@product), :data => {:confirm => "You sure?", :method => "delete"} %></p>
+  <p><%= link_to "Add a review", new_product_review_path(@product) %></p>
+  <% if current_user && current_user.admin %>
+    <p><%= link_to "Edit product", edit_product_path(@product) %></p>
+  <% end %>
+  <% if current_user && current_user.admin %>
+    <p><%= link_to "Delete product", product_path(@product), :data => {:confirm => "You sure?", :method => "delete"} %></p>
+  <% end %>
   <p><%= link_to "Return to products", products_path %></p>
 </div>

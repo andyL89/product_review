@@ -1,4 +1,7 @@
 class ReviewsController < ApplicationController
+  before_action :only => [:new] do
+    redirect_to new_user_session_path unless current_user
+  end
 
   def new
     @product = Product.find(params[:product_id])
@@ -41,7 +44,7 @@ class ReviewsController < ApplicationController
   end
 
   def destroy
-    @review = Review.find(params[:id])
+    @review = current_user.reviews.find(params[:id])
     @review.destroy
     flash[:notice] = "Review deleted!"
     redirect_to product_path(@review.product)

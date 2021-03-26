@@ -1,10 +1,10 @@
-# Products & Reviews
+# Products & Reviews w/ Authorization & Authentication
 #### **Author: Andy Lawson**
 * * *
 
 ## Description
 
-This webpage allows users to add products to a database. Users may add, update, and delete products. Users may also add, edit, and delete reviews for products.
+This webpage allows admins and users to login and logout. Admins are authorized to add, update, and delete products. Users are authorized to add reviews for products.
 
 ## Technologies used
 
