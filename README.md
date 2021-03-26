@@ -26,9 +26,10 @@ This webpage allows admins and users to login and logout. Admins are authorized 
 * * *
 ## User Stories
 
-* As a user I want to be able to add, update and delete new products.
-* As a user I want to be able to click an individual product to see its detail page.
-* As a user I want to be able to add a review to a product.
+* As an admin, I should be able to log in and log out of the application.
+* As an admin, I should be able to add, update and delete products and reviews.
+* As an admin, I want to ensure that other users don't have access to CRUD functionality.
+* As a user, I want to be able to create an account and add a review to a product. This is the only CRUD functionality a user can have.
 
 * * *
 ## Software Requirements
@@ -87,6 +88,19 @@ $ rake db:seed
 The database should now be correctly set up. And you may start a local server to interact with the project.
 
 10. To start a local server, open your default browser and type "localhost:3000" into the search bar and press enter. Here, you will see the live server.
+
+11. Follow the 'Sign Up' process to access the site.
+
+12. To change a user's status to admin:
+```
+$ psql
+```
+```
+$ \c product_review_development
+```
+```
+$ UPDATE users SET admin = true WHERE email = '[user email]'
+```
 
 ## Running Tests
 * This application was created using test-driven development (TDD).
