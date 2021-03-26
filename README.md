@@ -8,14 +8,17 @@ This webpage allows admins and users to login and logout. Admins are authorized 
 
 ## Technologies used
 
+* Active Storage
 * Bootstrap
 * Bundler
 * Capybara
+* Devise
 * Embedded Ruby
 * Faker
 * git
 * HTML
 * PostgreSQL
+* Rails Admin
 * Rspec
 * Ruby on Rails
 * SASS
